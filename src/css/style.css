@@ -1,0 +1,132 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap");
+/* REset */
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Edu SA Beginner", cursive;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html,
+body {
+  font-size: 20px;
+  background-color: #f4f4f4;
+  min-height: 60vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.container {
+  background-color: rgba(255, 0, 0, 0.6);
+  text-align: center;
+  width: 400px;
+  height: auto;
+  padding: 1.4rem;
+  margin: 100px 0 0 0;
+  border-radius: 0.1rem;
+  box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.5) inset;
+}
+
+.container .status {
+  height: 1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 0.155rem;
+  visibility: hidden;
+}
+
+.status-red {
+  color: #fff;
+  background-color: #d50000;
+}
+
+.status-green {
+  color: #fff;
+  background-color: #25d366;
+}
+
+.container h2 {
+  padding: 0.1rem 0 0.8rem 0;
+  font-size: 1.8rem;
+}
+
+.container .form-control #grocery-item {
+  border: none;
+  outline: none;
+  height: 2.1rem;
+  width: 14rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.container .form-control .submit-btn {
+  margin: 0.7rem 0 0 0;
+  padding: 0.3rem 0.6rem;
+  letter-spacing: 0.0425rem;
+  border-radius: 0.3rem;
+  border: 0;
+  background-color: #ffb900;
+  font-size: medium;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.container .form-control .submit-btn:hover {
+  cursor: pointer;
+}
+
+.form-control .character {
+  padding: 0;
+  margin: 0;
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.grocery-list {
+  padding: 0.0125rem 0 0.0125rem 0;
+  margin: 1rem 0 0.5rem 0;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0.1rem;
+  visibility: hidden;
+}
+
+.grocery-list ul {
+  list-style: none;
+  margin: 0.3rem;
+}
+
+.grocery-list ul li {
+  margin: 0.5rem 0;
+  padding: 0.3rem;
+  background: #ccc;
+  border-radius: 0.5px 0.5px 15px rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.grocery-list ul li .btn-container button {
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+}
+
+.grocery-list ul li .btn-container button:hover {
+  cursor: pointer;
+}
+
+.grocery-list ul li .btn-container button:first-child {
+  color: red;
+}
